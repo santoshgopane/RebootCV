@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    container_name: FlaskApp
+    restart: always
+    volumes:
+      - .:/usr/app/src
+    ports:
+      - '5000:5000'
