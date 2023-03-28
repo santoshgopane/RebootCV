@@ -25,6 +25,12 @@ def register():
     return render_template("register.html")
 
 
+@app.route("/login")  # , methods=["post"])
+def login():
+
+    return render_template("login.html")
+
+
 @app.route("/choose-templates")
 def choose_template():
     return "<h1>This page is going to be customizing the pdf!</h1>"
