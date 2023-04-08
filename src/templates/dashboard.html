@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}dashboard{% endblock %}
+
+{% block content %}
+
+{% if message %}
+<div class="alert alert-secondary" role="alert">
+    <p>{{ message }}</p>
+</div>
+{% endif %}
+This is a dashbord you see after you logged in!!!!!!!!!!
+{% endblock %}
